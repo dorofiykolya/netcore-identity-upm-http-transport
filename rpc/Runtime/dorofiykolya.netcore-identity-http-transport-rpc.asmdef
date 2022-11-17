@@ -1,0 +1,6 @@
+{
+  "name": "dorofiykolya.netcore-identity-http-transport-rpc",
+  "references": [
+    "dorofiykolya.http-transport-api"
+  ]
+}

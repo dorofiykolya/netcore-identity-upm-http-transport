@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <LangVersion>8</LangVersion>
+        <RootNamespace>RpcApi</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Include="..\upm-http-transport-api\Runtime\AsyncResponse.cs">
+        <Link>Runtime\AsyncResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\upm-http-transport-api\Runtime\IRemoteRequest.cs">
+        <Link>Runtime\IRemoteRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\upm-http-transport-api\Runtime\RequestResult.cs">
+        <Link>Runtime\RequestResult.cs</Link>
+      </Compile>
+    </ItemGroup>
+
+</Project>

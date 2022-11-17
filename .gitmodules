@@ -1,0 +1,6 @@
+[submodule "upm-http-transport-api"]
+	path = upm-http-transport-api
+	url = https://github.com/dorofiykolya/upm-http-transport-api.git
+[submodule "netcore-identity"]
+	path = netcore-identity
+	url = https://github.com/dorofiykolya/netcore-identity.git

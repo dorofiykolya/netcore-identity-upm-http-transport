@@ -1,6 +1,6 @@
 {
   "name": "dorofiykolya.netcore-identity-http-transport-rpc.asmdef",
-  "displayName": "netcore-identity-http-transport-rpc",
+  "displayName": "HTTP Netcore UPM RPC",
   "version": "1.0.0",
   "unity": "2019.4",
   "author": "https://github.com/dorofiykolya",

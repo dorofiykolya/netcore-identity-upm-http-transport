@@ -9,7 +9,7 @@ namespace Client.Generator
         {
             var output = RpcGenerator.Generate(new GeneratorConfiguration
             {
-                Namespace = "HttpTransport.Identity",
+                Namespace = "HttpTransport.Rpc.Identities",
                 ClassName = "IdentityRpc"
             });
             File.WriteAllText(args[0], output);

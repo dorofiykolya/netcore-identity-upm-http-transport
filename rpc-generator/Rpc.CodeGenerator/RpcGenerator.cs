@@ -41,8 +41,8 @@ namespace Client.CodeGenerator
                         .AddMembers(
                                 //DECALARE METHOD
                                 MethodDeclaration(
-                                                returnType: GenericName(Identifier(typeof(IAsyncResponse).GetFriendlyName()))
-                                                        .WithTypeArgumentList(TypeArgumentList(SingletonSeparatedList<TypeSyntax>(IdentifierName(rpcInfo.ResponseType.GetFriendlyName())))),
+                                                returnType: GenericName(Identifier($"global::{typeof(IAsyncResponse).GetFriendlyName()}"))
+                                                        .WithTypeArgumentList(TypeArgumentList(SingletonSeparatedList<TypeSyntax>(IdentifierName($"global::{rpcInfo.ResponseType.GetFriendlyName()}")))),
                                                 identifier: Identifier("Request")
                                         )
                                         // METHOD MODIFICATIONS                
@@ -50,7 +50,7 @@ namespace Client.CodeGenerator
                                         .WithModifiers(TokenList(Token(SyntaxKind.PublicKeyword)))
                                         // parameter - request of RequestType 
                                         .WithParameterList(ParameterList(SingletonSeparatedList(Parameter(Identifier("request"))
-                                                .WithType(IdentifierName(rpcInfo.RequestType.GetFriendlyName())))))
+                                                .WithType(IdentifierName($"global::{rpcInfo.RequestType.GetFriendlyName()}")))))
                                         // METHOD BODY
                                         .WithBody(Block(
                                                 // var asyncRequest = new AsyncResponse();
@@ -60,7 +60,7 @@ namespace Client.CodeGenerator
                                                                                 .WithTypeArgumentList(
                                                                                         TypeArgumentList(
                                                                                                 SingletonSeparatedList<TypeSyntax>(
-                                                                                                        IdentifierName(rpcInfo.ResponseType.GetFriendlyName())))))
+                                                                                                        IdentifierName($"global::{rpcInfo.ResponseType.GetFriendlyName()}")))))
                                                                         .WithArgumentList(
                                                                                 ArgumentList())))))),
                                                 ExpressionStatement(
@@ -79,14 +79,14 @@ namespace Client.CodeGenerator
                                                                                             Token(SyntaxKind.CommaToken),
                                                                                             Argument(
                                                                                                     TypeOfExpression(
-                                                                                                            IdentifierName(rpcInfo.RequestType.GetFriendlyName()))),
+                                                                                                            IdentifierName($"global::{rpcInfo.RequestType.GetFriendlyName()}"))),
                                                                                             Token(SyntaxKind.CommaToken),
                                                                                             Argument(
                                                                                                     IdentifierName("request")),
                                                                                             Token(SyntaxKind.CommaToken),
                                                                                             Argument(
                                                                                                     TypeOfExpression(
-                                                                                                            IdentifierName(rpcInfo.ResponseType.GetFriendlyName()))),
+                                                                                                            IdentifierName($"global::{rpcInfo.ResponseType.GetFriendlyName()}"))),
                                                                                             Token(SyntaxKind.CommaToken),
                                                                                             Argument(
                                                                                                     IdentifierName(

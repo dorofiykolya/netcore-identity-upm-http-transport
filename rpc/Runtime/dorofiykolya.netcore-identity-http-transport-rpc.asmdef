@@ -1,7 +1,17 @@
 {
-  "name": "dorofiykolya.netcore-identity-http-transport-rpc",
-  "references": [
-    "dorofiykolya.http-transport-api",
-    "dorofiykolya.upm-http-transport-identity-protocol"
-  ]
+    "name": "dorofiykolya.netcore-identity-http-transport-rpc",
+    "rootNamespace": "",
+    "references": [
+        "dorofiykolya.http-transport-api",
+        "dorofiykolya.upm-http-transport-identity-protocol"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

@@ -22,7 +22,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.CodeGenerator", "rpc-ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Generator", "rpc-generator\Rpc.Generator\Rpc.Generator.csproj", "{00134546-BEDC-4B25-B169-F3EDD3AE8755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Output", "Rpc.Output\Rpc.Output.csproj", "{A30CDBDA-8A2F-4F16-AC30-6055D2A453C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpc.Output", "rpc-generator\Rpc.Output\Rpc.Output.csproj", "{A30CDBDA-8A2F-4F16-AC30-6055D2A453C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

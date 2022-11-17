@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace HttpTransport.Identity
+namespace HttpTransport.Rpc.Identities
 {
     public abstract class IdentityRpc
     {
@@ -11,80 +11,80 @@ namespace HttpTransport.Identity
             _remoteRequest = request;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.SignInByEmailResponse> Request(Identity.Protocol.Rpc.SignInByEmailRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.SignInByEmailResponse> Request(global::Identity.Protocol.Rpc.SignInByEmailRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.SignInByEmailResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.SignInByEmailRequest), request, typeof(Identity.Protocol.Rpc.SignInByEmailResponse), System.Net.Http.HttpMethod.Post, "/sign/in/email");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.SignInByEmailResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.SignInByEmailRequest), request, typeof(global::Identity.Protocol.Rpc.SignInByEmailResponse), System.Net.Http.HttpMethod.Post, "/sign/in/email");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.SignInByGoogleResponse> Request(Identity.Protocol.Rpc.SignInByGoogleRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.SignInByGoogleResponse> Request(global::Identity.Protocol.Rpc.SignInByGoogleRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.SignInByGoogleResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.SignInByGoogleRequest), request, typeof(Identity.Protocol.Rpc.SignInByGoogleResponse), System.Net.Http.HttpMethod.Post, "/sign/in/google");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.SignInByGoogleResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.SignInByGoogleRequest), request, typeof(global::Identity.Protocol.Rpc.SignInByGoogleResponse), System.Net.Http.HttpMethod.Post, "/sign/in/google");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.SignInByGuestResponse> Request(Identity.Protocol.Rpc.SignInByGuestRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.SignInByGuestResponse> Request(global::Identity.Protocol.Rpc.SignInByGuestRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.SignInByGuestResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.SignInByGuestRequest), request, typeof(Identity.Protocol.Rpc.SignInByGuestResponse), System.Net.Http.HttpMethod.Post, "/sign/in/guest");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.SignInByGuestResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.SignInByGuestRequest), request, typeof(global::Identity.Protocol.Rpc.SignInByGuestResponse), System.Net.Http.HttpMethod.Post, "/sign/in/guest");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.SignOutResponse> Request(Identity.Protocol.Rpc.SignOutRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.SignOutResponse> Request(global::Identity.Protocol.Rpc.SignOutRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.SignOutResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.SignOutRequest), request, typeof(Identity.Protocol.Rpc.SignOutResponse), System.Net.Http.HttpMethod.Post, "/sign/out");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.SignOutResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.SignOutRequest), request, typeof(global::Identity.Protocol.Rpc.SignOutResponse), System.Net.Http.HttpMethod.Post, "/sign/out");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.SignUpByEmailResponse> Request(Identity.Protocol.Rpc.SignUpByEmailRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.SignUpByEmailResponse> Request(global::Identity.Protocol.Rpc.SignUpByEmailRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.SignUpByEmailResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.SignUpByEmailRequest), request, typeof(Identity.Protocol.Rpc.SignUpByEmailResponse), System.Net.Http.HttpMethod.Post, "/sign/up/email");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.SignUpByEmailResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.SignUpByEmailRequest), request, typeof(global::Identity.Protocol.Rpc.SignUpByEmailResponse), System.Net.Http.HttpMethod.Post, "/sign/up/email");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.SignUpEmailConfirmResponse> Request(Identity.Protocol.Rpc.SignUpEmailConfirmRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.SignUpEmailConfirmResponse> Request(global::Identity.Protocol.Rpc.SignUpEmailConfirmRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.SignUpEmailConfirmResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.SignUpEmailConfirmRequest), request, typeof(Identity.Protocol.Rpc.SignUpEmailConfirmResponse), System.Net.Http.HttpMethod.Post, "/sign/up/email/confirm");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.SignUpEmailConfirmResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.SignUpEmailConfirmRequest), request, typeof(global::Identity.Protocol.Rpc.SignUpEmailConfirmResponse), System.Net.Http.HttpMethod.Post, "/sign/up/email/confirm");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.TokenValidateResponse> Request(Identity.Protocol.Rpc.TokenValidateRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.TokenValidateResponse> Request(global::Identity.Protocol.Rpc.TokenValidateRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.TokenValidateResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.TokenValidateRequest), request, typeof(Identity.Protocol.Rpc.TokenValidateResponse), System.Net.Http.HttpMethod.Post, "/token/validate");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.TokenValidateResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.TokenValidateRequest), request, typeof(global::Identity.Protocol.Rpc.TokenValidateResponse), System.Net.Http.HttpMethod.Post, "/token/validate");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.RefreshTokenResponse> Request(Identity.Protocol.Rpc.RefreshTokenRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.RefreshTokenResponse> Request(global::Identity.Protocol.Rpc.RefreshTokenRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.RefreshTokenResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.RefreshTokenRequest), request, typeof(Identity.Protocol.Rpc.RefreshTokenResponse), System.Net.Http.HttpMethod.Post, "/token/refresh");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.RefreshTokenResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.RefreshTokenRequest), request, typeof(global::Identity.Protocol.Rpc.RefreshTokenResponse), System.Net.Http.HttpMethod.Post, "/token/refresh");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.ForgotEmailPasswordResponse> Request(Identity.Protocol.Rpc.ForgotEmailPasswordRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.ForgotEmailPasswordResponse> Request(global::Identity.Protocol.Rpc.ForgotEmailPasswordRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.ForgotEmailPasswordResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.ForgotEmailPasswordRequest), request, typeof(Identity.Protocol.Rpc.ForgotEmailPasswordResponse), System.Net.Http.HttpMethod.Post, "/user/email/forgot");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.ForgotEmailPasswordResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.ForgotEmailPasswordRequest), request, typeof(global::Identity.Protocol.Rpc.ForgotEmailPasswordResponse), System.Net.Http.HttpMethod.Post, "/user/email/forgot");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.ChangeEmailPasswordResponse> Request(Identity.Protocol.Rpc.ChangeEmailPasswordRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.ChangeEmailPasswordResponse> Request(global::Identity.Protocol.Rpc.ChangeEmailPasswordRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.ChangeEmailPasswordResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.ChangeEmailPasswordRequest), request, typeof(Identity.Protocol.Rpc.ChangeEmailPasswordResponse), System.Net.Http.HttpMethod.Post, "/user/email/change");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.ChangeEmailPasswordResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.ChangeEmailPasswordRequest), request, typeof(global::Identity.Protocol.Rpc.ChangeEmailPasswordResponse), System.Net.Http.HttpMethod.Post, "/user/email/change");
             return asyncRequest;
         }
 
-        public HttpTransport.Rpc.IAsyncResponse<Identity.Protocol.Rpc.UserInfoResponse> Request(Identity.Protocol.Rpc.UserInfoRequest request)
+        public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.UserInfoResponse> Request(global::Identity.Protocol.Rpc.UserInfoRequest request)
         {
-            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<Identity.Protocol.Rpc.UserInfoResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(Identity.Protocol.Rpc.UserInfoRequest), request, typeof(Identity.Protocol.Rpc.UserInfoResponse), System.Net.Http.HttpMethod.Post, "/user/info");
+            var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.UserInfoResponse>();
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.UserInfoRequest), request, typeof(global::Identity.Protocol.Rpc.UserInfoResponse), System.Net.Http.HttpMethod.Post, "/user/info");
             return asyncRequest;
         }
     }

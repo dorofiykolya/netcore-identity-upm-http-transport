@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>8</LangVersion>
+        <RootNamespace>Client.Output</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="..\..\rpc\Runtime\dorofiykolya.netcore-identity-http-transport-rpc.asmdef">
+            <Link>Runtime\dorofiykolya.netcore-identity-http-transport-rpc.asmdef</Link>
+        </Content>
+        <Content Include="..\..\rpc\Runtime\Rpc.cs">
+            <Link>Runtime\Rpc.cs</Link>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\netcore-identity\src\Protocol\Protocol.csproj"/>
+        <ProjectReference Include="..\..\rpc-api\Rpc.Api.csproj"/>
+    </ItemGroup>
+
+</Project>

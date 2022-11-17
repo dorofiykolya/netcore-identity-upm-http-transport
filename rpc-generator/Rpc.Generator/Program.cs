@@ -9,8 +9,8 @@ namespace Client.Generator
         {
             var output = RpcGenerator.Generate(new GeneratorConfiguration
             {
-                Namespace = "Game.Rpc",
-                ClassName = "RpcBase"
+                Namespace = "HttpTransport.Identity",
+                ClassName = "IdentityRpc"
             });
             File.WriteAllText(args[0], output);
         }

@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace Game.Rpc
+namespace HttpTransport.Identity
 {
-    public abstract class RpcBase
+    public abstract class IdentityRpc
     {
         private HttpTransport.Rpc.IRemoteRequest _remoteRequest;
-        protected RpcBase(HttpTransport.Rpc.IRemoteRequest request)
+        protected IdentityRpc(HttpTransport.Rpc.IRemoteRequest request)
         {
             _remoteRequest = request;
         }

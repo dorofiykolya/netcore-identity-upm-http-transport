@@ -56,7 +56,7 @@ namespace HttpTransport.Rpc.Identities
         public global::HttpTransport.Rpc.IAsyncResponse<global::Identity.Protocol.Rpc.TokenValidateResponse> Request(global::Identity.Protocol.Rpc.TokenValidateRequest request)
         {
             var asyncRequest = new HttpTransport.Rpc.AsyncResponse<global::Identity.Protocol.Rpc.TokenValidateResponse>();
-            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.TokenValidateRequest), request, typeof(global::Identity.Protocol.Rpc.TokenValidateResponse), System.Net.Http.HttpMethod.Post, "/token/validate");
+            _remoteRequest.Request(asyncRequest, typeof(global::Identity.Protocol.Rpc.TokenValidateRequest), request, typeof(global::Identity.Protocol.Rpc.TokenValidateResponse), System.Net.Http.HttpMethod.Post, "/token/verify");
             return asyncRequest;
         }
 
